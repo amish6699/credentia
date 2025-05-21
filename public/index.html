@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Credentia" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <title>Credentia - Username and Password Generator</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="brand">Credentia</h1>
+
+
+    <div class="logo">
+      <img src="icon.png" alt="App Icon" width="96" height="96" />
+    </div>
+
+    <div class="card">
+      <button id="generateBtn">Generate Credentials</button>
+
+      <div class="field">
+        <label>Username:</label>
+        <div class="row">
+          <span id="username" class="output">-</span>
+          <button class="copyBtn" data-target="username" title="Copy username">📋</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Password:</label>
+        <div class="row">
+          <span id="password" class="output">-</span>
+          <button class="copyBtn" data-target="password" title="Copy password">📋</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>Powered by Gemini AI</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
